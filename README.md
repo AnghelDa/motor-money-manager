@@ -1,59 +1,71 @@
-# MotorMoney
+# Motor Money Manager
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.12.
+A web application for managing automotive workshop jobs, organized by month.
 
-## Development server
+Motor Money Manager is a learning project built while developing my skills in Angular and TypeScript. The application allows workshop jobs to be added, edited, deleted, and organized according to their work date.
 
-To start a local development server, run:
+## Screenshot
+
+![Motor Money Manager](./screenshots/motor-money-manager.png)
+
+## Features
+
+- Add new automotive jobs
+- Edit existing jobs
+- Delete jobs
+- Organize jobs by month
+- Move a job to another month by changing its date
+- Calculate monthly income
+- Reactive Forms with validation
+- Angular routing
+- Custom pipes for data presentation
+- Responsive, mobile-first interface
+
+## Technologies
+
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Bootstrap
+- RxJS
+- Angular Reactive Forms
+- Angular Router
+- Git & GitHub
+
+## Project Status
+
+The project is currently under development.
+
+The current version focuses on the Angular frontend and local application data.
+
+## Future Improvements
+
+- Connect the application to a REST API
+- Add a Node.js / Express backend
+- Store data in MongoDB
+- Add persistent data storage
+- Improve authentication and user management
+- Continue improving the UI and user experience
+
+## Running the project locally
+
+Clone the repository and install the dependencies:
+
+```bash
+npm install
+```
+
+Start the Angular development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open the application in your browser at:
 
-## Code scaffolding
+`http://localhost:4200/`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Author
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Developed as part of my journey toward becoming a Frontend Developer, with a focus on Angular and TypeScript.
