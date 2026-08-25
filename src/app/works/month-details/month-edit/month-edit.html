@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-12">
+    <form [formGroup]="workForm" (ngSubmit)="onSubmit()">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="mb-3">
+            <label for="regNumber" class="form-label">Reg Number </label>
+            <input type="text" id="regNumber" formControlName="regNumber" class="form-control" />
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="mb-3">
+            <label for="car" class="form-label">Car</label>
+            <input type="text" id="car" formControlName="car" class="form-control" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea
+              id="description"
+              formControlName="description"
+              class="form-control"
+              rows="6"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" id="price" formControlName="price" class="form-control" />
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" id="date" formControlName="date" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+      <div class="row g-4">
+        <div class="col-12 d-flex gap-2">
+          <button type="submit" class="btn btn-success" [disabled]="!workForm.valid">Save</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
