@@ -14,6 +14,8 @@ export class MonthList implements OnInit {
   constructor(private monthListService: MonthListService) {}
 
   ngOnInit(): void {
-    this.months = this.monthListService.getMonths();
+    this.monthListService.monthsChanged.subscribe((months) => {
+      this.months = months;
+    });
   }
 }

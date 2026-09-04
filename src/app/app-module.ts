@@ -18,10 +18,11 @@ import { MonthListService } from './works/month-list/month-list.service';
 import { MonthService } from './works/month-details/month.service';
 
 import { AppRoutingModule } from './app-routing.module';
-import { WorksStart } from './works/works-start/works-start';
+
 import { PricePipe } from './price-pipe';
 import { CarNamePipe } from './car-name-pipe';
 import { RegNumberPipe } from './reg-number-pipe';
+import { AuthComponent } from './auth.component/auth.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +35,10 @@ import { RegNumberPipe } from './reg-number-pipe';
     WorkList,
     MonthEdit,
     Dropdown,
-    WorksStart,
     PricePipe,
     CarNamePipe,
     RegNumberPipe,
+    AuthComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [provideHttpClient(), MonthListService, MonthService],

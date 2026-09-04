@@ -29,9 +29,15 @@ export class MonthDetails implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
       this.monthId = +params['monthId'];
-      this.month = this.monthListService.getMonth(this.monthId);
-      this.monthService.setMonth(this.month);
-      this.works = this.monthService.getWorks();
+      this.monthListService.monthsChanged.subscribe((months) => {
+        if (months.length === 0) {
+          return;
+        }
+        this.month = months[this.monthId];
+
+        this.monthService.setMonth(this.month);
+        this.works = this.monthService.getWorks();
+      });
     });
   }
 
